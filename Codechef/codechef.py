@@ -174,5 +174,77 @@
 
 
 
+
+# 7- Chef has invested his money at an interest rate of X percent per annum while the current inflation rate is Y percent per annum.
+# An investment is called good if and only if the interest rate of the investment is at least twice of the inflation rate.Determine whether the investment made by Chef is good or not.
+
+# T = int(input())
+
+# for i in range(T):
+#     (x,y) = map(int , input().split(' '))
+#     if x >= 2*(y) :
+#         print("YES")
+#     else:
+#         print("NO")
+
+
+# 8- There were initially X million people in a town, out of which Y million people left the town and Z million people immigrated to this town.Determine the final population of town in millions.
+# Final Population
+
+# T =int(input())
+
+# for i in range(T):
+#     x,y,z = map(int , input().split(' '))
+#     result = (x-y)+z
+#     print(result)
+
+
+
+# 9- Alice is playing Air Hockey with Bob. The first person to earn seven points wins the match. Currently, Alice's score is A and Bob's score is B Charlie is eagerly waiting for his turn. Help Charlie by calculating the minimum number of points that will be further scored in the match before it ends.
+# Air Hockey
+# T =int(input())
+
+# for i in range(T):
+#     x,y = map(int , input().split(' '))
+    
+#     if x>y:
+#         print(7-x)
+#     else:
+#         print(7-y)
+
+
+
+# a,b = map(int , input().split(' '))
+# lst = [a,b]
+# print(lst)
+
+
+
+
+# for i in range(1):
+#     x,y,z = map(int , input().split(' '))
+#     lst = [x,y,z]
+#     for j in  range(3):
+#         A = lst[(j+1)%3] * lst[(j+2)%3]
+#         B = lst[j]
+
+#         if A % B == 0:
+#             print(A,B)
+#         else:
+#             print(-1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # -----------------------------------------------------------------400-500---------------------------------------------------------------------------------------
 # -----------------------------------------------------------------500-600---------------------------------------------------------------------------------------
