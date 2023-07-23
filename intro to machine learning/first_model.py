@@ -8,9 +8,7 @@ paths = './datasets/first_model.csv'
 
 
 # reading  dataset and converting into dataframe
-df = pd.read_csv(paths) 
-print(df.isnull().sum())
-
+df = pd.read_csv(paths)
 
 
 

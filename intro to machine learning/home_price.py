@@ -5,7 +5,7 @@ from sklearn.metrics import mean_absolute_error
 # saving dataset path into variable 
 trian_path = './datasets/home_prediction/train.csv'
 
-# making dataframe data by using datasets path  
+# making dataframe of data
 df_train = pd.read_csv(trian_path)
 
 
@@ -31,7 +31,9 @@ train_validation = fitting.predict(x)
 # print(mean_absolute_error(y,train_validation))
 # print(y[:6])
 
-
+'''
+below here we are taking a new unseen datset 
+'''
 # now again we are setting up things to use new unseen data (test data) 
 test_path = './datasets/home_prediction/test.csv'
 df_test = pd.read_csv(test_path)
@@ -44,12 +46,15 @@ test_x = df_test[selected_col]
 
 algo.fit(x,y)
 
-algo.fit(x,y)
-
 test_validation = algo.predict(test_x)
 
 
 # making dictionary for id and predicted sale price
 output = pd.DataFrame({'id':df_test.Id , 'saleprice':test_validation})
-output.to_csv('house_pred.dictonary' , index=False)
+output.to_csv('house_pred_csv' , index=False)
 print(output)
+
+
+
+
+
